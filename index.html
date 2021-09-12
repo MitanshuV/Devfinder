@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Devjob finder</title>
+  </head>
+  <body id="body" class="body">
+    <header>
+      <h1 class="display">Display</h1>
+      <span class="material-icons dark-mode"> dark_mode </span>
+      <span class="light-mode"> ☀ </span>
+    </header>
+    <form class="text">
+      <span class="material-icons"> search </span>
+      <input
+        type="text"
+        id="value"
+        placeholder="Search github username"
+      />
+      <button type="submit" id="btn">search</button>
+    </form>
+    <div class="github-container">
+      <div class="githubContainer-details">
+        <div class="nbs">
+          <div class="githubContainer-img"></div>
+          <div class="head-box">
+            <h3 class="name"></h3>
+            <span class="date"></span>
+            <p class="login"></p>
+          </div>
+        </div>
+        <div class="bio-box">
+          <p class="bio"></p>
+        </div>
+        <div class="side-box">
+          <div class="repos">
+            <span>repos</span>
+            <p class="rep-num"></p>
+          </div>
+          <div class="following">
+            <span>following</span>
+            <p class="follow-num"></p>
+          </div>
+          <div class="follower">
+            <span> follower </span>
+            <p class="follower-num"></p>
+          </div>
+        </div>
+        <div class="media-box">
+          <div class="box-1">
+            <div class="location">
+              <span class="material-icons icons0"> location_on </span>
+              <p class="locations"></p>
+            </div>
+            <div class="url">
+              <span class="material-icons icons1"> link </span>
+              <p class="urls"></p>
+            </div>
+          </div>
+          <div class="box-2">
+            <div class="twitter">
+              <span class="material-icons icons2"> person </span>
+              <p class="twitters"></p>
+            </div>
+            <div class="github">
+              <span class="material-icons icons3"> business </span>
+              <p class="githubs"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

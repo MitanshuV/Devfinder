@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(20 28 47);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+  padding: 10px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  color: white;
+  position: relative;
+}
+form {
+  background-color: rgb(31 42 72);
+  display: flex;
+  height: 55px;
+  padding: 6px;
+  align-items: center;
+  margin-top: 2%;
+  flex: 1;
+  border-radius: 10px;
+}
+form .material-icons {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(2 121 254);
+  font-size: 25px;
+}
+form input {
+  height: 100%;
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+  color: silver;
+}
+form input::placeholder {
+  color: rgba(192, 192, 192, 0.322);
+  font-size: 18px;
+}
+form button {
+  height: 100%;
+  width: 70px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: rgb(2 121 254);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.github-container {
+  width: 100%;
+  height: 350px;
+  background-color: rgb(31 42 72);
+  margin-top: 15px;
+  display: flex;
+  flex: 1;
+  border-radius: 10px;
+}
+.githubContainer-img {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+.githubContainer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.githubContainer-details {
+  width: 100%;
+  height: 100%;
+}
+.nbs {
+  display: flex;
+  margin-bottom: 50px;
+}
+/* =============== head box =============== */
+.githubContainer-details .head-box {
+  width: 100%;
+  height: 85px;
+  color: white;
+  position: relative;
+  border-radius: 0px 10px 0px 0px;
+  padding: 5px;
+}
+.head-box span {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  color: grey;
+}
+.head-box h2 {
+  position: absolute;
+  left: 10px;
+}
+.head-box p {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: rgb(2 121 254);
+}
+
+/* =============== bio box =============== */
+.githubContainer-details .bio-box {
+  width: 100%;
+  position: relative;
+  color: aliceblue;
+}
+
+.bio-box p {
+  position: absolute;
+  margin: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* =============== side box =============== */
+.githubContainer-details .side-box {
+  width: 90%;
+  height: 95px;
+  background: rgb(20 28 46);
+  position: relative;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: -10px;
+  justify-content: space-around;
+}
+
+.side-box .repos,
+.follower,
+.following {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.side-box span {
+  color: gray;
+  font-weight: 600;
+}
+.side-box p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* =============== media box =============== */
+.githubContainer-details .media-box {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  border-radius: 0 0px 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.media-box .box-1,
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.media-box span {
+  color: white;
+}
+.media-box p {
+  color: gray;
+  margin-left: 5px;
+  word-break: break-all;
+}
+
+.media-box .location,
+.url,
+.twitter,
+.github {
+  display: flex;
+}
+
+/* mariapedraza */
+@media screen and (max-width: 786px) {
+  body {
+    width: 370px;
+    flex: 1;
+  }
+  .media-box {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    top: 30px;
+  }
+  .github-container {
+    flex-direction: column;
+    height: 420px;
+    flex: 1;
+  }
+  .date {
+    font-size: 12px;
+  }
+  .media-box p {
+    margin-top: 32px;
+  }
+  .bio-box {
+    height: 55px;
+  }
+  form button {
+    font-size: 18px;
+    width: 80px;
+  }
+  .side-box {
+    width: 100%;
+    margin: auto;
+  }
+  .nbs {
+    display: flex;
+    margin-bottom: 0;
+  }
+  .media-box .location,
+  .url,
+  .twitter,
+  .github {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 35px;
+    padding: 0 60px;
+  }
+  .media-box span {
+    margin-left: -20px;
+  }
+}
+
+/* ================== dark-mode ================== */
+.dark-mode {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+}
+.change-bg {
+  background-color: white;
+}
+.change-bg-heading {
+  color: rgb(20 28 47);
+}
+.change-bg-mode {
+  color: rgb(20 28 47);
+  display: none;
+}
+.light-mode {
+  display: none;
+  font-size: 20px;
+}
+.change-light-mode {
+  display: block;
+  color: rgb(20 28 47);
+  font-size: 32px;
+  cursor: pointer;
+}
+/* add styles */
+.add-form-styles {
+  background: white;
+  box-shadow: 1px 1px 5px 0px silver;
+}
+.form {
+  background-color: white;
+  box-shadow: 2px 2px 5px grey;
+}
+.add-form-input::placeholder {
+  color: rgba(148, 147, 147, 0.753);
+}
+.add-form-input {
+  color: rgb(20 28 47);
+}
+.change-git {
+  color: rgb(20 28 47);
+  background-color: white;
+  box-shadow: 1px 1px 5px 0px grey;
+}
+.media-box .change-icon {
+  color: rgb(20 28 47);
+}
+.change-bio {
+  color: rgb(20 28 47);
+}
+.change-side-box {
+  background: white;
+  box-shadow: 0px 0px 6px grey;
+}
+/* kakvo e instagram */
